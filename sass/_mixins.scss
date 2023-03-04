@@ -1,0 +1,196 @@
+@use "variables";
+
+@mixin caracteristicas-presentacion {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@mixin titulares {
+    color: variables.$color-principal;
+    font-weight: 500;
+    font-size: 34px;
+    text-decoration: underline;
+    position: relative;
+    top: 68px;
+    left: 67px;
+    width: 90%;
+}
+
+@mixin icon-habilidade-rotate {
+    transform: scale(1.1)  rotate(10deg);
+}
+
+@mixin dimension-contendores {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin dimension-proyectos-portoflio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+@mixin titular-proyectos {
+    margin-bottom: 17px;
+    font-size: 25px;
+    font-weight: 550;
+    color: #fff;
+}
+
+@mixin caracteristicas-info-proyecto {
+    box-shadow: 0 0 50px rgba(255, 213, 0, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: lighter;
+    padding: 5px 8px 5px 8px;
+}
+
+@mixin caracteristicas-iconos-proyecto {
+    margin: 10px 0;
+    font-size: 28px;
+    text-decoration: none;
+
+    a {
+        color: variables.$color-principal;
+    }
+}
+
+@mixin caracteristicas-tecnologias-usadas-proyecto {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100;
+}
+
+@mixin boton-info-footer {
+    .btn-certificado {
+        cursor: pointer;
+
+        a {
+            float: right;
+            position: relative;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 10px 30px;
+            letter-spacing: .1em;
+            transition: .5s;
+
+            &:hover {
+                letter-spacing: .15em;
+                background: var(--color);
+                color: var(--color);
+                box-shadow: 0 0 35px var(--color);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 2px;
+                background: #27282c;
+            }
+
+            span {
+                position: relative;
+            }
+
+            i {
+                position: absolute;
+                inset: 0;
+                display: block;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -3.5px;
+                    left: 80%;
+                    width: 15px;
+                    height: 8px;
+                    border: 2px solid var(--color);
+                    background: #27282c;
+                    transform: translateX(-50%);
+                    transition: .5s;
+                }
+            }
+        }
+
+        a {
+            &:hover i::before {
+                width: 20px;
+                left: 20%;
+            }
+        }
+
+        a{
+            i {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -3.5px;
+                    left: 20%;
+                    width: 15px;
+                    height: 8px;
+                    border: 2px solid var(--color);
+                    background: #27282c;
+                    transform: translateX(-50%);
+                    transition: .5s;
+                }
+            }
+        }
+
+        a {
+            &:hover i::after {
+                width: 20px;
+                left: 80%;
+            }
+        }
+    }
+}
+
+@mixin herramientas-icono-fuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@mixin info-para-extra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin caracteristicas-enlaces-info-extra {
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 100;
+        font-size: 15px;
+
+        &:hover {
+            color: variables.$color-principal;
+        }
+
+        &:active {
+            color: #8e790f;
+        }
+    }
+}
+
+@mixin sacar-fondo-y-borde-btn-idioma {
+    background: transparent;
+    border: none;
+}
+
+/* Mixins de responsive */
+
+@mixin titulares-responsive-1024px {
+    font-size: 30px;
+    left: 0px;
+    width: 100%;
+    padding:10px 0 0 50px;
+}
