@@ -215,6 +215,7 @@ main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn {
 }
 main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn a {
   color: #F2CD1A;
+  text-decoration: none;
 }
 main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn::before {
   content: "";
