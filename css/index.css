@@ -205,7 +205,6 @@ main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn {
   width: 180px;
   border-radius: 4px;
   text-transform: uppercase;
-  color: #F2CD1A;
   font-size: 18px;
   overflow: hidden;
   transition: all 500ms ease;
@@ -213,6 +212,9 @@ main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn {
   background: transparent;
   cursor: pointer;
   z-index: 0;
+}
+main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn a {
+  color: #F2CD1A;
 }
 main .sobre-mi .sobremi-info .contenido-sobremi .btn-f .btn::before {
   content: "";
@@ -320,12 +322,6 @@ main .habilidades .cont-habilidades .tabcontent .interior-tabs .icons-habilidade
   color: #fdee21;
 }
 main .habilidades .cont-habilidades .tabcontent .interior-tabs .icons-habilidades .fa-square-js:hover {
-  transform: scale(1.1) rotate(10deg);
-}
-main .habilidades .cont-habilidades .tabcontent .interior-tabs .icons-habilidades .fa-java {
-  color: #0075bf;
-}
-main .habilidades .cont-habilidades .tabcontent .interior-tabs .icons-habilidades .fa-java:hover {
   transform: scale(1.1) rotate(10deg);
 }
 main .habilidades .cont-habilidades .tabcontent .interior-tabs .icons-habilidades .fa-bootstrap {

@@ -223,13 +223,13 @@ main {
                 .btn-f {
                     text-align: center;
                     margin-top: 20px;
+                    
                     .btn {
                         position: relative;
                         height: 47px;
                         width: 180px;
                         border-radius: 4px;
                         text-transform: uppercase;
-                        color: variables.$color-principal;
                         font-size: 18px;
                         overflow: hidden;
                         transition: all 500ms ease;
@@ -237,6 +237,10 @@ main {
                         background: transparent;
                         cursor: pointer;
                         z-index: 0;
+                        
+                        a {
+                        color: variables.$color-principal;
+                        }
 
                         &::before {
                             content: '';
@@ -363,12 +367,12 @@ main {
                             }
                         }
 
-                        .fa-java {
-                            color: variables.$java;
-                            &:hover {
-                                @include mixins.icon-habilidade-rotate;
-                            }
-                        }
+                        // .fa-java {
+                        //     color: variables.$java;
+                        //     &:hover {
+                        //         @include mixins.icon-habilidade-rotate;
+                        //     }
+                        // }
 
                         .fa-bootstrap {
                             color: variables.$bootstrap;
